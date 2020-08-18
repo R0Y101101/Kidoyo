@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>    
+
+<!-- Our id "demo" -->
+<p id="demo"></p>
+
+<script>
+ 
+//array burgerMenu 
+var burgerMenu = ["Silent Night Burger", " Paranormal Pepper Jack-tivity Burger", 
+" Misson A-Corn-Plished Burger"," The Final Kraut Down Burger"];
+
+//my supremeArray
+var supremeArray = [];
+
+//this for each loop we are saying for each string in burgerMenu we are going to store it in function burger so when ever we say burger it refers to burgerMenu
+burgerMenu.forEach(function(burger) {
+    
+    //adding burger and string into BurgerSupreme
+    var BurgerSupreme = burger + " supreme";
+    
+    //pushing BurgerSupreme
+    supremeArray.push(BurgerSupreme);
+
+    //printing everything on the screen
+    document.getElementById("demo").innerHTML = supremeArray;
+
+}
+
+);
+
+// printing out sumpreme array
+console.log(supremeArray);
+ </script>
+ </body>
+ </html>
